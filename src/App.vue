@@ -1,32 +1,26 @@
+<!--
+ * @Description: file content
+ * @Author: mintZ
+ * @Date: 2021-02-15 11:28:47
+ * @LastEditors: mintZ
+ * @LastEditTime: 2021-02-18 17:44:10
+-->
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <!-- 路由占位符 -->
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import HelloWorld from './components/HelloWorld.vue';
 
-#nav {
-  padding: 30px;
+export default {
+  name: 'app',
+  components: {
+  },
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<style>
 </style>
