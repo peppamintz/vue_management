@@ -35,7 +35,7 @@ module.exports = {
     'prefer-const': 'off',
     'no-restricted-syntax': 'off',
     'no-unused-expressions': 'off',
-    'global-require': 'off'
-    
+    'global-require': 'off',
+
   },
 };
