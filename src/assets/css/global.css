@@ -5,3 +5,22 @@ body,
   margin: 0;
   padding: 0;
 }
+.el-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+.el-card {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+.el-table {
+  margin-top: 15px;
+  font-size: 12px;
+  
+}
+.el-table th.gutter{
+    display: table-cell !important;
+}
+
+.el-pagination {
+  margin-top: 15px;
+}

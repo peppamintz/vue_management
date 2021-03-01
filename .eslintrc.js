@@ -3,7 +3,7 @@
  * @Author: zhou min
  * @Date: 2021-02-15 13:45:29
  * @LastEditors: mintZ
- * @LastEditTime: 2021-02-15 13:49:43
+ * @LastEditTime: 2021-02-25 21:09:30
  */
 module.exports = {
   root: true,
@@ -36,6 +36,8 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-unused-expressions': 'off',
     'global-require': 'off',
-
+    'no-unused-vars': 'off',
+    'consistent-return': 'off',
+    'no-useless-return': 'off',
   },
 };

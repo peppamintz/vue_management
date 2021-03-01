@@ -3,7 +3,7 @@
  * @Author: mintZ
  * @Date: 2021-02-18 17:37:06
  * @LastEditors: mintZ
- * @LastEditTime: 2021-02-20 15:23:21
+ * @LastEditTime: 2021-02-21 22:30:55
 -->
 <template>
   <div class="login_container">
@@ -68,13 +68,6 @@ export default {
       },
     };
   },
-
-  components: {},
-
-  computed: {},
-
-  mounted: {},
-
   methods: {
     resetForm() {
       // 点击充值按钮，重置登录表单
