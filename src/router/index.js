@@ -3,7 +3,7 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-02-23 17:17:10
+ * @LastEditTime: 2021-03-03 09:31:02
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -33,14 +33,24 @@ const routes = [
     path: '/home',
     component: () => import('@/components/Home.vue'),
     redirect: '/welcome',
-    children: [{
-      path: '/welcome',
-      component: () => import('../components/Welcome.vue'),
-      children: [{
-        path: '/users',
-        component: () => import('../views/user/Users.vue'),
-      }],
-    }],
+    children: [
+      {
+        path: '/welcome',
+        component: () => import('../components/Welcome.vue'),
+        children: [{
+          path: '/users',
+          component: () => import('../views/user/Users.vue'),
+        }],
+      },
+      {
+        path: '/rights',
+        component: () => import('../views/power/Right.vue'),
+      },
+      {
+        path: '/roles',
+        component: () => import('../views/power/Roles.vue'),
+      },
+    ],
   },
 ];
 

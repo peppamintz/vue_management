@@ -3,7 +3,7 @@
  * @Author: zhou min
  * @Date: 2021-02-15 13:45:29
  * @LastEditors: mintZ
- * @LastEditTime: 2021-02-25 21:09:30
+ * @LastEditTime: 2021-03-03 10:55:50
  */
 module.exports = {
   root: true,
@@ -39,5 +39,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'consistent-return': 'off',
     'no-useless-return': 'off',
+    'vue/no-unused-vars': 'off',
   },
 };
