@@ -3,7 +3,7 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-03 09:31:02
+ * @LastEditTime: 2021-03-04 09:01:52
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -49,6 +49,10 @@ const routes = [
       {
         path: '/roles',
         component: () => import('../views/power/Roles.vue'),
+      },
+      {
+        path: '/categories',
+        component: () => import('../views/goods/Cate.vue'),
       },
     ],
   },

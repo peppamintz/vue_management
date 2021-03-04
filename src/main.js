@@ -3,12 +3,13 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-01 13:52:34
+ * @LastEditTime: 2021-03-04 10:30:26
  */
 import Vue from 'vue';
 import ElementUI, { Message } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios';
+import TreeTable from 'vue-table-with-tree-grid';
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -29,6 +30,7 @@ Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
+Vue.component('tree-table', TreeTable);
 
 new Vue({
   router,
