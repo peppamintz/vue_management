@@ -3,7 +3,7 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-04 09:01:52
+ * @LastEditTime: 2021-03-05 10:13:52
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -53,6 +53,10 @@ const routes = [
       {
         path: '/categories',
         component: () => import('../views/goods/Cate.vue'),
+      },
+      {
+        path: '/params',
+        component: () => import('../views/goods/Params.vue'),
       },
     ],
   },
