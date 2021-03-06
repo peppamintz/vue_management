@@ -3,13 +3,18 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-04 10:30:26
+ * @LastEditTime: 2021-03-06 21:18:55
  */
 import Vue from 'vue';
 import ElementUI, { Message } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios';
 import TreeTable from 'vue-table-with-tree-grid';
+import VueQuillEditor from 'vue-quill-editor';
+import 'quill/dist/quill.core.css';// import styles
+import 'quill/dist/quill.snow.css'; // for snow theme
+import 'quill/dist/quill.bubble.css'; // for bubble theme
+
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -30,7 +35,22 @@ Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
+// 将富文本编辑器，注册稍为全局可用的组件
+Vue.use(VueQuillEditor);
 Vue.component('tree-table', TreeTable);
+Vue.filter('dateFormat', function (originVal) {
+  const dt = new Date(originVal);
+  const y = dt.getFullYear();
+  // padStart是字符串的方法，所以要先转换为字符串，作用是如果月份不足两位就在前面补个0
+  const m = (dt.getMonth() + 1 + '').padStart(2, '0');
+  const d = (dt.getDate() + 1 + '').padStart(2, '0');
+
+  const hh = (dt.getHours() + '').padStart(2, '0');
+  const mm = (dt.getMinutes() + '').padStart(2, '0');
+  const ss = (dt.getSeconds() + '').padStart(2, '0');
+
+  return `${y}-${m}-${d} ${hh}-${mm}-${ss}`;
+});
 
 new Vue({
   router,

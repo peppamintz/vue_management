@@ -3,7 +3,7 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-05 10:13:52
+ * @LastEditTime: 2021-03-05 23:07:28
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -57,6 +57,14 @@ const routes = [
       {
         path: '/params',
         component: () => import('../views/goods/Params.vue'),
+      },
+      {
+        path: '/goods',
+        component: () => import('../views/goods/List.vue'),
+      },
+      {
+        path: '/goods/add',
+        component: () => import('../views/goods/add.vue'),
       },
     ],
   },

@@ -3,7 +3,7 @@
  * @Author: zhou min
  * @Date: 2021-02-15 13:45:29
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-04 15:58:42
+ * @LastEditTime: 2021-03-05 21:48:52
  */
 module.exports = {
   root: true,
@@ -41,5 +41,7 @@ module.exports = {
     'no-useless-return': 'off',
     'vue/no-unused-vars': 'off',
     'no-else-return': 'off',
+    'prefer-arrow-callback': 'off',
+    'prefer-template': 'off',
   },
 };
