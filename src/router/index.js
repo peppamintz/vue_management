@@ -3,7 +3,7 @@
  * @Author: mintZ
  * @Date: 2021-02-15 11:28:47
  * @LastEditors: mintZ
- * @LastEditTime: 2021-03-05 23:07:28
+ * @LastEditTime: 2021-03-07 09:31:37
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -65,6 +65,10 @@ const routes = [
       {
         path: '/goods/add',
         component: () => import('../views/goods/add.vue'),
+      },
+      {
+        path: '/orders',
+        component: () => import('../views/order/Order.vue'),
       },
     ],
   },
